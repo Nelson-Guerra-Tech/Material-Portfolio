@@ -1,1 +1,395 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Manrope:wght@200;300;400;500;600;800&display=swap");
+@import "./app//components//themes//base.styles.css";
+@import "~aos/dist/aos.css";
+
+:root {
+  /* Font Families */
+  --lato-font: "Lato", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
+  --manrope-apple-font: "Manrope", sans-serif;
+
+  /* Colors */
+  --light-dark: #636363;
+  --dark: #212529;
+  --darker: #151515;
+  --night: #0b0b0b;
+  --day: #f6f6f6;
+  --danger: #ff220c;
+  --gold: #fdbb11;
+  --warning: #dd6031;
+  --ut-orange: #ff8811;
+  --highlight: #fa7921;
+  --info: #2274a5;
+  --white: #ffff;
+  --mint: #06a77d;
+  --lavender: #8d80ad;
+  --sky: #90f1ef;
+  --blue: #01baef;
+  --ocean: #196bde;
+  --teal: #1dd3b0;
+  --yellow: #ffff3f;
+  --green: #ccff33;
+  --jet: #333333;
+  --charcoal: #050517;
+  --dark-charcoal: #14080e;
+  --sky-gradient: linear-gradient(
+    343deg,
+    rgba(69, 111, 232, 1) 20%,
+    rgba(25, 176, 236, 1) 100%
+  );
+  --off-white: #fcfcfb;
+  --faded-text: #838383;
+  --light-text: #576574;
+  --orange-text: #dd6031;
+  --light-blue: #337ca0;
+
+  /* Backgrounds */
+  --bg-light-gray: #ececec;
+  --bg-gradient-color: #fc466b;
+
+  /* Gradients */
+  --highlight-linear-gradient-pink-blue: linear-gradient(
+    to left,
+    #fc466b,
+    #3f5efb
+  );
+
+  /* Font Weight */
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+  --font-weight-lighter: lighter;
+  --font-weight-bold: bold;
+
+  /* Text Alignment */
+  --text-decoration-none: none;
+  --text-align-left: left;
+  --text-align-right: right;
+
+  /* Width */
+  --width-100-vw: 100vw;
+  --width-100-percent: 100%;
+  --width-1024-px: 1024px;
+  --width-1080-px: 1080px;
+  --width-1200-px: 1200px;
+
+  /* Max Width */
+  --max-width-100-percent: 100%;
+  --max-width-350-px: 350px;
+  --max-width-360-px: 360px;
+  --max-width-370-px: 370px;
+  --max-width-475-px: 475px;
+
+  /* Min Width */
+  --min-width-100-percent: 100%;
+
+  /* Height */
+  --height-50-px: 50px;
+  --height-75-px: 75px;
+  --height-600-px: 600px;
+  --height-100-vh: 100vh;
+  --height-100-percent: 100%;
+
+  /* Margin */
+  --margin-auto: auto;
+  --margin-0-px: 0;
+  --margin-10-px: 10px;
+
+  /* Padding */
+  --padding-1-rem: 1rem;
+  --padding-1-5-rem: 1.5rem;
+  --padding-4-rem: 4rem;
+  --padding-0-px: 0px;
+  --padding-3-px: 3px;
+  --padding-4-px: 4px;
+  --padding-5-px: 5px;
+  --padding-10-px: 10px;
+  --padding-12-px: 12px;
+  --padding-16-px: 16px;
+  --padding-20-px: 20px;
+  --padding-30-px: 30px;
+  --padding-40-px: 40px;
+  --padding-50-px: 50px;
+  --padding-60-px: 60px;
+  --padding-70-px: 70px;
+  --padding-80-px: 80px;
+  --padding-90-px: 90px;
+  --padding-100-px: 100px;
+
+  /* PX */
+  --unit-0: 0;
+  --unit-0-px: 0px;
+  --unit-1-px: 1px;
+  --unit-2-px: 2px;
+  --unit-3-px: 3px;
+  --unit-minus-4-px: -4px;
+  --unit-4-px: 4px;
+  --unit-5-px: 5px;
+  --unit-6-px: 6px;
+  --unit-7-px: 7px;
+  --unit-8-px: 8px;
+  --unit-9-px: 9px;
+  --unit-10-px: 10px;
+  --unit-11-px: 11px;
+  --unit-12-px: 12px;
+  --unit-13-px: 13px;
+  --unit-14-px: 14px;
+  --unit-15-px: 15px;
+  --unit-16-px: 16px;
+  --unit-17-px: 17px;
+  --unit-18-px: 18px;
+  --unit-19-px: 19px;
+  --unit-20-px: 20px;
+  --unit-21-px: 21px;
+  --unit-22-px: 22px;
+  --unit-23-px: 23px;
+  --unit-24-px: 24px;
+  --unit-25-px: 25px;
+  --unit-30-px: 30px;
+  --unit-31-px: 31px;
+  --unit-32-px: 32px;
+  --unit-35-px: 35px;
+  --unit-40-px: 40px;
+  --unit-41-px: 41px;
+  --unit-42-px: 42px;
+  --unit-43-px: 43px;
+  --unit-44-px: 44px;
+  --unit-45-px: 45px;
+  --unit-50-px: 50px;
+  --unit-55-px: 55px;
+  --unit-60-px: 60px;
+  --unit-65-px: 65px;
+  --unit-70-px: 70px;
+  --unit-100-px: 100px;
+  --unit-150-px: 150px;
+  --unit-200-px: 200px;
+  --unit-250-px: 250px;
+  --unit-275-px: 275px;
+  --unit-300-px: 300px;
+  --unit-350-px: 350px;
+  --unit-360-px: 360px;
+  --unit-375-px: 375px;
+  --unit-400-px: 400px;
+  --unit-450-px: 450px;
+  --unit-475-px: 475px;
+  --unit-480-px: 480px;
+  --unit-500-px: 500px;
+  --unit-700-px: 700px;
+
+  /* Single Digits */
+  --unit-1: 1;
+  --unit-2: 2;
+
+  /* Gap */
+  --gap-1-rem: 1rem;
+  --gap-2-rem: 2rem;
+  --gap-1-px: 1px;
+  --gap-10-px: 10px;
+  --gap-16-px: 16px;
+  --gap-40-px: 40px;
+
+  /* Font Size */
+  --font-size-1-5-rem: 1.5rem;
+  --font-size-1-6-rem: 1.6rem;
+  --font-size-1-9-rem: 1.9rem;
+  --font-size-2-2-rem: 2.2rem;
+  --font-size-10-px: 10px;
+  --font-size-14-px: 14px;
+  --font-size-15-px: 15px;
+  --font-size-16-px: 16px;
+  --font-size-18-px: 18px;
+  --font-size-20-px: 20px;
+  --font-size-22-px: 22px;
+  --font-size-25-px: 25px;
+  --font-size-30-px: 30px;
+  --font-size-35-px: 35px;
+  --font-size-40-px: 40px;
+  --font-size-45-px: 45px;
+  --font-size-50-px: 50px;
+  --font-size-55-px: 55px;
+  --font-size-60-px: 60px;
+
+  /* Lists */
+  --list-style-none: none;
+  --none: none;
+
+  /* Letter Spacing */
+  --letter-spacing-0-1-rem: 0.1rem;
+
+  /* Object Fit */
+  --object-fit-cover: cover;
+  --fit-content: fit-content;
+
+  /* Margin Top */
+  --margin-top-2-rem: 2rem;
+  --margin-top-8-rem: 8rem;
+  --margin-top-5-px: 5px;
+  --margin-top-10-px: 10px;
+  --margin-top-15-px: 15px;
+
+  /* Margin Right */
+
+  /* Margin Left */
+
+  /* Margin Bottom */
+  --margin-bottom-5-rem: 5rem;
+  --margin-bottom-8-rem: 8rem;
+  --margin-bottom-10-rem: 10rem;
+  --margin-bottom-5-px: 5px;
+  --margin-bottom-10-px: 10px;
+  --margin-bottom-20-px: 20px;
+
+  /* Float */
+  --float-left: left;
+  --float-right: right;
+  --float-top: top;
+  --float-bottom: bottom;
+
+  /* FlexBox */
+  --display-flex: flex;
+  --flex-direction-column: column;
+  --flex-direction-row: row;
+  --flex-wrap: wrap;
+  --flex-no-wrap: nowrap;
+  --flex-grow-1: 1;
+  --flex-shrink-1: 1;
+  --flex-basis-1: 1;
+
+  /* Justify Content */
+  --justify-content-start: flex-start;
+  --justify-content-center: center;
+  --justify-content-end: end;
+  --justify-content-space-around: space-around;
+  --justify-content-space-between: space-between;
+  --justify-content-space-evenly: space-evenly;
+
+  /* Align Items */
+  --align-items-start: flex-start;
+  --align-items-center: center;
+  --align-items-end: flex-end;
+
+  /* Align Content */
+  --align-contents-start: flex-start;
+  --align-contents-center: center;
+  --align-contents-end: flex-end;
+
+  /* Grid */
+  --display-grid: grid;
+
+  /* Float Alignment */
+  --float-left: left;
+  --float-right: right;
+  --float-none: none;
+
+  /* Display */
+  --display-block: block;
+  --display-inline-block: inline-block;
+  --display-none: none;
+  --overflow-hidden: hidden;
+  --overflow-visible: visible;
+  --overflow-scroll: scroll;
+  --visibility-visible: visible;
+  --visibility-hidden: hidden;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  --box-shadow-medium: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  /* Position */
+  --position-absolute: absolute;
+  --position-fixed: fixed;
+  --position-relative: relative;
+  --position-inherit: inherit;
+
+  /* Text Transformation */
+  --text-decoration-underline: underline;
+  --text-transformation-uppercase: uppercase;
+  --text-transformation-lowercase: lowercase;
+  --text-transformation-capitalize: capitalize;
+  --text-fill-transparent: transparent;
+  --bg-clip-text: text;
+
+  /* Transitions */
+  --transition-0-3-seconds: all 0.3s ease-in-out;
+
+  /* Text Decoration */
+  --text-decoration-none: none;
+
+  /* Box Sizing */
+  --border-sizing-border-box: border-box;
+  --solid: solid;
+
+  /* Border Radius */
+  --border-radius-8-px: 8px;
+  --border-radius-10-px: 10px;
+  --border-radius-20-px: 20px;
+  --border-radius-30-px: 30px;
+  --border-radius-40-px: 40px;
+  --border-radius-50-px: 50px;
+  --border-radius-60-px: 60px;
+  --border-radius-50-percent: 50%;
+
+  /* Percentage */
+  --unit-93-percent: 93%;
+  --unit-94-percent: 94%;
+  --unit-95-percent: 95%;
+  --unit-96-percent: 96%;
+  --unit-97-percent: 97%;
+  --unit-98-percent: 98%;
+  --unit-99-percent: 99%;
+  --unit-100-percent: 100%;
+
+  /* Border Style */
+  --border-style-none: none;
+
+  /* Cursor */
+  --user-select-none: none;
+  --cursor-pointer: pointer;
+  --cursor-crosshair: crosshair;
+  --cursor-default: default;
+
+  /* Transitions */
+  --scroll-behavior-smooth: smooth;
+  --transition-ease-in-out: ease-in-out;
+  --transition-ease-in: ease-in;
+  --transition-ease-out: ease-out;
+  --transition-all: all 0.3s ease-in-out;
+
+  /* Opacity */
+  --opacity-0-8: 0.8;
+}
+
+* {
+  margin: var(--margin-0-px);
+  padding: var(--padding-0-px);
+  box-sizing: var(--border-sizing-border-box);
+  font-family: var(--manrope-apple-font);
+}
+
+html {
+  margin: var(--margin-0-px) var(--margin-auto);
+  max-width: var(--width-1080-px);
+  scroll-behavior: var(--scroll-behavior-smooth);
+}
+
+body {
+  background-color: var(--white);
+  color: var(--charcoal);
+  padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
+    var(--padding-0-px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
+      var(--padding-0-px);
+  }
+}
