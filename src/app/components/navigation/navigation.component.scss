@@ -1,0 +1,70 @@
+.ux-portfolio-menu {
+  padding: var(--unit-0-px) var(--unit-5-px) var(--unit-0-px) var(--unit-0-px);
+
+  &__nav {
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-space-between);
+  }
+
+  &__brand {
+    font-weight: var(--font-weight-400);
+    font-size: var(--unit-18-px);
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    cursor: var(--cursor-pointer);
+  }
+
+  &__subtitle {
+    font-size: var(--unit-15-px);
+    font-weight: var(--font-weight-100);
+    color: var(--faded-text);
+    margin-left: 5px;
+  }
+
+  &__links {
+    ul {
+      display: var(--display-flex);
+      gap: var(--gap-40-px);
+      list-style: var(--list-style-none);
+
+      a {
+        text-decoration: var(--text-decoration-none);
+        color: var(--faded-text);
+        font-size: var(--unit-16-px);
+        transition: var(--transition-0-3-seconds);
+      }
+
+      a:hover {
+        color: var(--white);
+      }
+    }
+  }
+
+  &__separator {
+    display: var(--display-inline-block);
+    width: var(--unit-5-px);
+    height: var(--unit-5-px);
+    background-color: var(--darker); /* or any color you like */
+    border-radius: var(--border-radius-50-percent);
+    margin: var(--unit-8-px) var(--unit-2-px) var(--unit-0-px) var(--unit-2-px); /* to give some space around the circle */
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    padding: var(--unit-0-px) var(--unit-10-px) var(--unit-0-px)
+      var(--unit-10-px);
+
+    &__nav {
+      justify-content: var(--justify-content-center);
+    }
+
+    &__links {
+      display: var(--none);
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: var(--unit-0-px) var(--unit-10-px) var(--unit-0-px)
+      var(--unit-10-px);
+  }
+}
