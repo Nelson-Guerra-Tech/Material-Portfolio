@@ -1,1 +1,33 @@
-<p>landing-page works!</p>
+<div class="ux-portfolio-hero-section">
+  <div class="ux-portfolio-hero-section__description">
+    <label
+      >Software Engineer &
+      <span class="ux-portfolio-hero-section__description--gradient"
+        >UI Designer</span
+      ></label
+    >
+
+    <p class="ux-portfolio-hero-section__introduction">
+      <span class="ux-portfolio-hero-section__introduction--highlight"
+        >Hey, my name is Nelson. </span
+      >
+      Currently, I'm working as a Software Engineer at
+      <span class="ux-portfolio-hero-section__introduction--underlined"
+        >Delta Air Lines</span
+      >, where my contributions to Delta DOTCOM have reached millions of people
+      worldwide.
+      <br />
+      <br />
+      I mostly do front-end development, and love to design & build simple,
+      beautiful, and memorable digital products.
+    </p>
+
+    <button class="ux-portfolio-hero-section__action">
+      <a [innerHTML]="content.action"></a>
+    </button>
+  </div>
+
+  <div class="ux-portfolio-hero-section__hero-image">
+    <img [src]="content.image.src" [alt]="content.image.alt" />
+  </div>
+</div>

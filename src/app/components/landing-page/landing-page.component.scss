@@ -1,0 +1,92 @@
+.ux-portfolio-hero-section {
+  display: var(--display-flex);
+  justify-content: var(--justify-content-space-between);
+  align-items: var(--align-items-center);
+  width: var(--width-100-percent);
+  padding-top: var(--unit-130-px);
+
+  &__description {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+
+    label {
+      max-width: var(--unit-600-px);
+      font-size: var(--unit-65-px);
+      font-weight: var(--font-weight-600);
+      line-height: var(--unit-70-px);
+    }
+
+    &--gradient {
+      background: #a8ff78; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #78ffd6,
+        #a8ff78
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #78ffd6,
+        #a8ff78
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      -webkit-background-clip: var(--bg-clip-text);
+      -webkit-text-fill-color: var(--text-fill-transparent);
+    }
+  }
+
+  &__introduction {
+    max-width: var(--unit-500-px);
+    font-size: var(--unit-18-px);
+    font-weight: var(--font-weight-200);
+    line-height: var(--unit-30-px);
+    margin-top: var(--unit-50-px);
+    margin-bottom: var(--unit-50-px);
+    color: var(--faded-text);
+
+    &--highlight {
+      color: var(--white);
+      font-weight: var(--font-weight-300);
+    }
+
+    &--underlined {
+      color: var(--white);
+      font-weight: var(--font-weight-300);
+      text-decoration: var(--text-decoration-underline);
+    }
+  }
+
+  &__action {
+    width: var(--unit-200-px);
+    padding: var(--unit-15-px) var(--unit-30-px);
+    border-radius: var(--unit-10-px);
+    border: var(--text-decoration-none);
+    cursor: var(--cursor-pointer);
+
+    background: #a8ff78; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #78ffd6,
+      #a8ff78
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #78ffd6,
+      #a8ff78
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    a {
+      font-size: var(--unit-18-px);
+      font-weight: var(--font-weight-600);
+      color: var(--charcoal);
+    }
+  }
+
+  &__hero-image {
+    img {
+      border-radius: var(--unit-10-px);
+      width: var(--unit-400-px);
+      height: var(--unit-600-px);
+      object-fit: var(--object-fit-cover);
+    }
+  }
+}
