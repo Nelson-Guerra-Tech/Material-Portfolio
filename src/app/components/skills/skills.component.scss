@@ -1,0 +1,15 @@
+.ux-portfolio-skill-section {
+  display: var(--display-flex);
+  justify-content: var(--justify-content-center);
+  align-items: var(--align-items-center);
+  gap: var(--unit-80-px);
+  width: var(--width-100-percent);
+  padding-top: var(--unit-100-px);
+  padding-bottom: var(--unit-100-px);
+
+  &__skills-logo {
+    img {
+      width: var(--unit-80-percent);
+    }
+  }
+}

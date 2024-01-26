@@ -1,1 +1,8 @@
-<p>skills works!</p>
+<div class="ux-portfolio-skill-section">
+  <div
+    class="ux-portfolio-skill-section__skills-logo"
+    *ngFor="let skill of content.skills"
+  >
+    <img [src]="skill.src" [alt]="skill.alt" />
+  </div>
+</div>
