@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Manrope:wght@200;300;400;500;600;800&display=swap");
-@import "./app//components//themes//base.styles.css";
-@import "~aos/dist/aos.css";
+// @import "~aos/dist/aos.css";
 
 :root {
   /* Font Families */
@@ -24,9 +23,11 @@
   --info: #2274a5;
   --white: #ffff;
   --mint: #06a77d;
+  --light-green: #a8ff78;
   --lavender: #8d80ad;
   --sky: #90f1ef;
   --blue: #01baef;
+  --light-blue: #78ffd6;
   --ocean: #196bde;
   --teal: #1dd3b0;
   --yellow: #ffff3f;
@@ -115,6 +116,7 @@
   --padding-12-px: 12px;
   --padding-16-px: 16px;
   --padding-20-px: 20px;
+  --padding-25-px: 25px;
   --padding-30-px: 30px;
   --padding-40-px: 40px;
   --padding-50-px: 50px;
@@ -168,7 +170,9 @@
   --unit-60-px: 60px;
   --unit-65-px: 65px;
   --unit-70-px: 70px;
+  --unit-80-px: 80px;
   --unit-100-px: 100px;
+  --unit-130-px: 130px;
   --unit-150-px: 150px;
   --unit-200-px: 200px;
   --unit-250-px: 250px;
@@ -182,6 +186,7 @@
   --unit-475-px: 475px;
   --unit-480-px: 480px;
   --unit-500-px: 500px;
+  --unit-600-px: 600px;
   --unit-700-px: 700px;
 
   /* Single Digits */
@@ -338,6 +343,7 @@
   --border-radius-50-percent: 50%;
 
   /* Percentage */
+  --unit-80-percent: 80%;
   --unit-93-percent: 93%;
   --unit-94-percent: 94%;
   --unit-95-percent: 95%;
@@ -376,14 +382,14 @@
 
 html {
   margin: var(--margin-0-px) var(--margin-auto);
-  max-width: var(--width-1080-px);
+  max-width: var(--width-1200-px);
   scroll-behavior: var(--scroll-behavior-smooth);
 }
 
 body {
-  background-color: var(--white);
-  color: var(--charcoal);
-  padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
+  background-color: #141414;
+  color: var(--white);
+  padding: var(--padding-30-px) var(--padding-0-px) var(--padding-0-px)
     var(--padding-0-px);
 }
 
