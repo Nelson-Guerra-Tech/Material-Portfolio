@@ -14,7 +14,7 @@ export const landingPageMock: LandingPage = {
       <br />
       <br />
       I mostly do front-end development, and love to design & build simple,
-      beautiful, and memorable digital products.`,
+      user friendly, and memorable digital products.`,
   },
   action: "Get in touch",
   image: {
