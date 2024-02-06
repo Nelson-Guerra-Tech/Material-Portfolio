@@ -1,0 +1,28 @@
+<div class="ux-portfolio-writing-section">
+  <div
+    class="ux-portfolio-writing-section__header"
+    [innerHTML]="content.section"
+  ></div>
+  <div class="ux-portfolio-writing-section__main-container">
+    <div
+      *ngFor="let read of content.article"
+      class="ux-portfolio-writing-section__card-wrapper"
+    >
+      <div class="ux-portfolio-writing-section__image">
+        <img [src]="read.image.src" alt="" />
+      </div>
+      <div class="ux-portfolio-writing-section__title-wrapper">
+        <a [href]="read.url" target="_blank">
+          <label
+            class="ux-portfolio-writing-section__title"
+            [innerHTML]="read.title"
+          ></label>
+        </a>
+        <label
+          class="ux-portfolio-writing-section__label"
+          [innerHTML]="read.label"
+        ></label>
+      </div>
+    </div>
+  </div>
+</div>
