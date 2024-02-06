@@ -1,0 +1,22 @@
+<div class="ux-portfolio-value-section">
+  <div
+    class="ux-portfolio-value-section__header"
+    [innerHTML]="content.section"
+  ></div>
+
+  <div class="ux-portfolio-value-section__project-container">
+    <div
+      class="ux-portfolio-value-section__card-wrapper"
+      *ngFor="let value of content.skills"
+    >
+      <label
+        class="ux-portfolio-value-section__title"
+        [innerHTML]="value.title"
+      ></label>
+      <label
+        class="ux-portfolio-value-section__description"
+        [innerHTML]="value.description"
+      ></label>
+    </div>
+  </div>
+</div>
