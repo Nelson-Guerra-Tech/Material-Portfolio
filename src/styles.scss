@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Manrope:wght@200;300;400;500;600;800&display=swap");
+@import "./app/themes//base-themes.css";
 // @import "~aos/dist/aos.css";
 
 :root {
@@ -13,10 +14,10 @@
   --light-dark: #636363;
   --dark: #212529;
   --darker: #151515;
-  --night: #0b0b0b;
+  --night: #202020;
   --day: #f6f6f6;
-  --danger: #ff220c;
-  --gold: #fdbb11;
+  --danger: #f1516e;
+  --gold: #ffcc00;
   --warning: #dd6031;
   --ut-orange: #ff8811;
   --highlight: #fa7921;
@@ -24,14 +25,20 @@
   --white: #ffff;
   --mint: #06a77d;
   --light-green: #a8ff78;
-  --lavender: #8d80ad;
+  --light-grey: #e6e6e6;
+  --lavender: #b066e0;
   --sky: #90f1ef;
   --blue: #01baef;
   --light-blue: #78ffd6;
+  --watermelon: #f44040;
+  --trust: #007ea7;
   --ocean: #196bde;
   --teal: #1dd3b0;
   --yellow: #ffff3f;
-  --green: #ccff33;
+  --green: #e9f500;
+  --success: #e9f500;
+  --pastel-yellow: #ffef9f;
+  --pastel-green: #7bf1a8;
   --jet: #333333;
   --charcoal: #050517;
   --dark-charcoal: #14080e;
@@ -41,7 +48,7 @@
     rgba(25, 176, 236, 1) 100%
   );
   --off-white: #fcfcfb;
-  --faded-text: #838383;
+  --faded-text: #686868;
   --light-text: #576574;
   --orange-text: #dd6031;
   --light-blue: #337ca0;
@@ -77,10 +84,13 @@
 
   /* Width */
   --width-100-vw: 100vw;
+  --width-95-percent: 95%;
   --width-100-percent: 100%;
   --width-1024-px: 1024px;
   --width-1080-px: 1080px;
   --width-1200-px: 1200px;
+  --width-1300-px: 1300px;
+  --width-1400-px: 1400px;
 
   /* Max Width */
   --max-width-100-percent: 100%;
@@ -172,12 +182,15 @@
   --unit-70-px: 70px;
   --unit-80-px: 80px;
   --unit-100-px: 100px;
+  --unit-120-px: 120px;
   --unit-130-px: 130px;
   --unit-150-px: 150px;
+  --unit-170-px: 170px;
   --unit-200-px: 200px;
   --unit-250-px: 250px;
   --unit-275-px: 275px;
   --unit-300-px: 300px;
+  --unit-335-px: 335px;
   --unit-350-px: 350px;
   --unit-360-px: 360px;
   --unit-375-px: 375px;
@@ -186,8 +199,11 @@
   --unit-475-px: 475px;
   --unit-480-px: 480px;
   --unit-500-px: 500px;
+  --unit-550-px: 550px;
   --unit-600-px: 600px;
   --unit-700-px: 700px;
+  --unit-800-px: 800px;
+  --unit-900-px: 900px;
 
   /* Single Digits */
   --unit-1: 1;
@@ -231,6 +247,7 @@
 
   /* Object Fit */
   --object-fit-cover: cover;
+  --object-fit-contain: contain;
   --fit-content: fit-content;
 
   /* Margin Top */
@@ -263,6 +280,7 @@
   --flex-direction-column: column;
   --flex-direction-row: row;
   --flex-wrap: wrap;
+  --flex-wrap-reverse: wrap-reverse;
   --flex-no-wrap: nowrap;
   --flex-grow-1: 1;
   --flex-shrink-1: 1;
@@ -278,6 +296,7 @@
 
   /* Align Items */
   --align-items-start: flex-start;
+  --align-items-stretch: stretch;
   --align-items-center: center;
   --align-items-end: flex-end;
 
@@ -343,6 +362,10 @@
   --border-radius-50-percent: 50%;
 
   /* Percentage */
+  --unit-50-percent: 50%;
+  --unit-55-percent: 55%;
+  --unit-60-percent: 60%;
+  --unit-70-percent: 70%;
   --unit-80-percent: 80%;
   --unit-93-percent: 93%;
   --unit-94-percent: 94%;
@@ -381,21 +404,12 @@
 }
 
 html {
-  margin: var(--margin-0-px) var(--margin-auto);
-  max-width: var(--width-1200-px);
   scroll-behavior: var(--scroll-behavior-smooth);
 }
 
 body {
-  background-color: #141414;
-  color: var(--white);
-  padding: var(--padding-30-px) var(--padding-0-px) var(--padding-0-px)
-    var(--padding-0-px);
+  background-color: #f0f0f0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  body {
-    padding: var(--padding-20-px) var(--padding-0-px) var(--padding-0-px)
-      var(--padding-0-px);
-  }
 }
