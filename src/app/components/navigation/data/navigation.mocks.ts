@@ -2,7 +2,7 @@ import { Navigation } from "../models/navigation.interface";
 
 export const NavigationData: Navigation = {
   label: {
-    title: "Nelson Guerra",
+    title: "NG",
     subtitle: "Software Engineer & UI Designer",
   },
   links: {
