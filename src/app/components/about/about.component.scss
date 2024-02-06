@@ -1,0 +1,113 @@
+.ux-portfolio-about-section {
+  width: var(--width-100-percent);
+  margin-top: var(--unit-170-px);
+  color: var(--night);
+
+  &__title-wrapper {
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
+
+  &__title {
+    font-size: var(--unit-25-px);
+    font-weight: var(--font-weight-400);
+  }
+
+  &__spacer {
+    width: var(--unit-55-percent); /* Adjust as needed */
+    border-bottom: var(--night) var(--unit-2-px) var(--solid);
+    margin: var(--unit-0-px) var(--unit-0-px) var(--unit-8-px) var(--unit-10-px);
+  }
+
+  &__details-wrapper {
+    display: var(--display-flex);
+    padding-top: var(--unit-80-px);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
+
+  &__description {
+    max-width: var(--unit-550-px);
+    color: var(--faded-text);
+    font-size: var(--unit-20-px);
+    font-weight: var(--font-weight-300);
+    margin-bottom: var(--unit-40-px);
+
+    span {
+      color: var(--night);
+    }
+  }
+
+  &__skills-wrapper {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    margin-bottom: var(--unit-50-px);
+  }
+
+  &__skills-title {
+    font-size: var(--unit-45-px);
+    font-weight: var(--font-weight-300);
+  }
+
+  &__skills-subtitle {
+    font-size: var(--unit-15-px);
+    font-weight: var(--font-weight-400);
+  }
+
+  &__badges-wrapper {
+    display: var(--display-flex);
+    flex-wrap: var(--flex-wrap);
+    gap: var(--unit-5-px);
+    width: var(--unit-350-px);
+  }
+
+  &__badge {
+    font-size: var(--unit-18-px);
+    font-weight: var(--font-weight-300);
+    width: var(--fit-content);
+    padding: var(--unit-8-px) var(--unit-15-px);
+    border-radius: var(--unit-20-px);
+  }
+
+  &__profile-image {
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    margin-left: var(--unit-150-px);
+    img {
+      max-width: var(--unit-300-px);
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .ux-portfolio-about-section {
+    &__title-wrapper {
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
+
+    &__details-wrapper {
+      flex-wrap: var(--flex-wrap-reverse);
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
+
+    &__description {
+      max-width: var(--unit-100-percent);
+      color: var(--faded-text);
+      font-size: var(--unit-20-px);
+      margin-top: var(--unit-50-px);
+    }
+
+    &__profile-image {
+      display: var(--display-flex);
+      margin: 0 auto;
+    }
+
+    &__spacer {
+      width: var(--unit-60-percent);
+    }
+  }
+}

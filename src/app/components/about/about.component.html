@@ -1,0 +1,50 @@
+<div class="ux-portfolio-about-section">
+  <section class="ux-portfolio-about-section__centered">
+    <div class="ux-portfolio-about-section__title-wrapper">
+      <div
+        class="ux-portfolio-about-section__title"
+        [innerHTML]="content.section"
+      ></div>
+      <div class="ux-portfolio-about-section__spacer"></div>
+    </div>
+    <div class="ux-portfolio-about-section__details-wrapper">
+      <div class="ux-portfolio-about-section__details">
+        <div
+          class="ux-portfolio-about-section__description"
+          [innerHTML]="safeHtml"
+        ></div>
+
+        <div
+          class="ux-portfolio-about-section__skills-wrapper"
+          *ngFor="let skill of content.skills"
+        >
+          <div
+            class="ux-portfolio-about-section__skills-title"
+            [innerHTML]="skill.title"
+          ></div>
+          <div
+            class="ux-portfolio-about-section__skills-subtitle"
+            [innerHTML]="skill.subtitle"
+          ></div>
+        </div>
+
+        <div class="ux-portfolio-about-section__badges-wrapper">
+          <div
+            *ngFor="let badge of content.badges"
+            class="ux-portfolio-about-section__badge"
+            cardColor
+            [cardColorBackground]="badge.color"
+            [cardColorLabel]="badge.labelColor"
+          >
+            <span [innerHTML]="badge.label"></span>
+          </div>
+        </div>
+
+        <div class="ux-portfolio-about-section__skills"></div>
+      </div>
+      <div class="ux-portfolio-about-section__profile-image">
+        <img [src]="content.image.src" [alt]="content.image.alt" />
+      </div>
+    </div>
+  </section>
+</div>
