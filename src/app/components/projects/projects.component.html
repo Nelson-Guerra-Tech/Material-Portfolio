@@ -1,1 +1,51 @@
-<p>projects works!</p>
+<div class="ux-portfolio-projects-section">
+  <section class="ux-portfolio-projects-section__centered">
+    <div class="ux-portfolio-projects-section__title-wrapper">
+      <div
+        class="ux-portfolio-projects-section__title"
+        [innerHTML]="content.section"
+      ></div>
+      <div class="ux-portfolio-projects-section__spacer"></div>
+    </div>
+
+    <div class="ux-portfolio-projects-section__projects-wrapper">
+      <div
+        class="ux-portfolio-projects-section__projects"
+        *ngFor="let project of content.project"
+      >
+        <div
+          cardColor
+          [cardColorBackground]="project.color"
+          class="ux-portfolio-projects-section__project-image"
+        >
+          <img [src]="project.image.src" alt="" />
+        </div>
+        <div
+          cardColor
+          [cardColorBackground]="project.color"
+          class="ux-portfolio-projects-section__project-description"
+        >
+          <div
+            class="ux-portfolio-projects-section__project-description-wrapper"
+          >
+            <p
+              class="ux-portfolio-projects-section__project-label"
+              [innerHTML]="project.label"
+            ></p>
+            <p
+              class="ux-portfolio-projects-section__project-title"
+              [innerHTML]="project.title"
+            ></p>
+          </div>
+          <div
+            cardColor
+            [cardColorBackground]="project.arrow.color"
+            class="ux-portfolio-projects-section__arrow"
+          >
+            <img [src]="project.arrow.image.src" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

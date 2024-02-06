@@ -1,0 +1,112 @@
+.ux-portfolio-projects-section {
+  width: var(--width-100-percent);
+  margin-top: var(--unit-170-px);
+  color: var(--night);
+
+  &__title-wrapper {
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
+
+  &__title {
+    font-size: var(--unit-25-px);
+    font-weight: var(--font-weight-400);
+  }
+
+  &__spacer {
+    width: var(--unit-55-percent);
+    border-bottom: var(--night) var(--unit-2-px) var(--solid);
+    margin: var(--unit-0-px) var(--unit-0-px) var(--unit-8-px) var(--unit-10-px);
+  }
+
+  &__projects-wrapper {
+    display: var(--display-flex);
+    box-sizing: var(--border-sizing-border-box);
+    align-items: var(--align-items-center);
+    flex-flow: var(--flex-wrap);
+    gap: var(--unit-10-px);
+    padding-top: var(--unit-80-px);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
+
+  &__projects {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+    box-sizing: var(--border-sizing-border-box);
+    align-items: var(--align-items-stretch);
+    max-width: var(--unit-100-percent);
+    flex-grow: var(--flex-grow-1);
+  }
+
+  &__project-image {
+    display: var(--display-flex);
+    max-height: var(--unit-100-percent);
+    width: var(--unit-100-percent);
+    height: var(--unit-400-px);
+    justify-content: var(--justify-content-center);
+    align-items: var(--align-items-center);
+    img {
+      max-height: var(--unit-80-percent);
+      max-width: var(--unit-80-percent);
+      object-fit: var(--object-fit-contain);
+      box-sizing: var(--border-sizing-border-box);
+    }
+  }
+
+  &__project-description {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-row);
+    justify-content: var(--justify-content-space-between);
+    box-sizing: var(--border-sizing-border-box);
+    align-items: var(--align-items-center);
+    padding: var(--unit-30-px) var(--unit-40-px);
+  }
+
+  &__project-description-wrapper {
+    display: var(--display-flex);
+    flex-direction: var(--flex-direction-column);
+  }
+
+  &__project-label {
+    color: var(--faded-text);
+    font-weight: var(--font-weight-600);
+    margin-bottom: var(--unit-5-px);
+  }
+
+  &__project-title {
+    font-size: var(--unit-25-px);
+    font-weight: var(--font-weight-700);
+  }
+
+  &__arrow {
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    padding: var(--unit-20-px);
+    border-radius: var(--unit-50-percent);
+    cursor: var(--cursor-pointer);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .ux-portfolio-projects-section {
+    &__title-wrapper {
+      display: var(--display-flex);
+      align-items: var(--align-items-end);
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
+
+    &__projects-wrapper {
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
+
+    &__spacer {
+      width: var(--unit-60-percent);
+    }
+  }
+}
