@@ -19,8 +19,8 @@ export const ProjectDataMocks: Projects = {
         color: "pastel-green",
       },
       action: {
-        url: "View My Work",
-        text: "Download CV",
+        url: "https://www.delta.com/",
+        text: "",
       },
     },
     {
@@ -40,12 +40,12 @@ export const ProjectDataMocks: Projects = {
       },
       action: {
         url: "View My Work",
-        text: "Download CV",
+        text: "",
       },
     },
     {
       color: "pastel-green",
-      label: "In Angular -",
+      label: "In Swift -",
       title: "In Progress",
       image: {
         src: "",
@@ -60,7 +60,7 @@ export const ProjectDataMocks: Projects = {
       },
       action: {
         url: "View My Work",
-        text: "Download CV",
+        text: "",
       },
     },
   ],

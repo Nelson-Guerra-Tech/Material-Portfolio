@@ -45,13 +45,15 @@
               [innerHTML]="project.title"
             ></p>
           </div>
-          <div
+          <a
             cardColor
             [cardColorBackground]="project.arrow.color"
             class="ux-portfolio-projects-section__arrow"
+            [href]="project.action.url"
+            target="_blank"
           >
             <img [src]="project.arrow.image.src" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

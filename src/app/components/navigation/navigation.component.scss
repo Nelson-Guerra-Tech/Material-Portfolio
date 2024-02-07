@@ -14,6 +14,10 @@
     height: var(--unit-70-px);
     width: var(--unit-95-percent);
     margin: 0 auto; /* Auto margins on the sides */
+
+    a {
+      text-decoration: var(--none);
+    }
   }
 
   &__nav {

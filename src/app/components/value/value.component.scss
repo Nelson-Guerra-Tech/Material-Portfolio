@@ -39,6 +39,11 @@
     max-width: var(--unit-100-percent);
     width: var(--unit-500-px);
     padding: var(--unit-30-px) var(--unit-35-px);
+    transition: 0.3s all ease-in;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
   }
 
   &__expertise-title {

@@ -19,7 +19,7 @@ export interface Item {
   arrow: Arrow;
   color: Color;
   labelColor?: Color;
-  action?: Action;
+  action: Action;
 }
 
 export interface Projects {

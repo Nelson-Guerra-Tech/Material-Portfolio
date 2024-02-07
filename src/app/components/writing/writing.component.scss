@@ -40,6 +40,11 @@
     text-decoration: var(--none);
     display: var(--display-flex);
     align-items: var(--align-items-end);
+    transition: 0.3s all ease-in;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
   }
 
   &__articles-title {
