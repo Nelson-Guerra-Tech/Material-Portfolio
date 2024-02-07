@@ -1,11 +1,19 @@
 .ux-portfolio-footer {
   display: var(--display-flex);
-  justify-content: var(--justify-content-space-between);
-  gap: var(--unit-30-px);
+  justify-content: var(--justify-content-center);
+  gap: var(--unit-750-px);
   align-items: var(--align-items-center);
-  border-top: var(--unit-1-px) var(--solid) var(--faded-text);
+  border-top: var(--unit-1-px) var(--solid) var(--light);
   color: var(--night);
   padding: var(--unit-100-px) var(--unit-30-px);
+
+  &__main-wrapper {
+    display: var(--display-flex);
+    justify-content: var(--justify-content-space-between);
+    align-items: var(--align-items-center);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
 
   &__brand-wrapper {
     display: var(--display-flex);
@@ -36,12 +44,12 @@
 
     a:-webkit-any-link {
       transition: var(--transition-0-3-seconds);
-      color: var(--faded-text);
+      color: var(--night);
       cursor: var(--cursor-pointer);
     }
 
     a:hover {
-      color: var(--white);
+      color: var(--faded-text);
       cursor: var(--cursor-pointer);
     }
   }
@@ -49,18 +57,37 @@
   &__rights {
     color: var(--faded-text);
   }
+
+  &__built {
+    font-weight: var(--font-weight-500);
+    color: var(--night);
+    margin-top: var(--unit-5-px);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .ux-portfolio-footer {
-    padding: var(--unit-100-px) var(--unit-10-px);
-  }
-  .ux-portfolio-footer {
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     gap: var(--unit-40-px);
+    padding: var(--unit-100-px) var(--unit-10-px);
+
+    &__main-wrapper {
+      display: var(--display-flex);
+      flex-direction: var(--flex-direction-column);
+      gap: var(--unit-40-px);
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
+
     &__brand-wrapper {
       font-size: var(--unit-20-px);
+    }
+    &__rights-wrapper {
+      display: var(--display-flex);
+      flex-direction: var(--flex-direction-column);
+      justify-content: var(--justify-content-center);
+      align-items: var(--align-items-center);
     }
     &__links {
       gap: var(--unit-10-px);

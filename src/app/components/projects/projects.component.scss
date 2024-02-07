@@ -93,6 +93,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .ux-portfolio-projects-section {
+    margin-top: var(--unit-120-px);
     &__title-wrapper {
       display: var(--display-flex);
       align-items: var(--align-items-end);
@@ -103,6 +104,7 @@
     &__projects-wrapper {
       width: var(--unit-95-percent); /* Adjust as needed */
       margin: 0 auto; /* Auto margins on the sides */
+      padding-top: var(--unit-50-px);
     }
 
     &__spacer {

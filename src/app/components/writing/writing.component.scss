@@ -1,87 +1,124 @@
 .ux-portfolio-writing-section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-
-  &__header {
-    font-size: 50px;
-    margin: 0px 0px 100px 0px;
-    font-weight: 600;
-  }
-
-  &__main-container {
-    display: flex;
-    justify-content: space-between;
-    // flex-grow: 1;
-    // flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  &__card-wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+  width: var(--width-100-percent);
+  margin-top: var(--unit-170-px);
+  color: var(--night);
 
   &__title-wrapper {
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    // max-width: 350px;
-
-    a {
-      text-decoration: underline;
-      color: var(--white);
-      margin-bottom: 10px;
-    }
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
   }
 
   &__title {
-    font-size: 35px;
-    font-weight: 500;
-    cursor: pointer;
+    font-size: var(--unit-25-px);
+    font-weight: var(--font-weight-400);
   }
 
-  &__label {
-    font-size: 15px;
-    color: var(--faded-text);
+  &__spacer {
+    width: var(--unit-59-percent);
+    border-bottom: var(--night) var(--unit-2-px) var(--solid);
+    margin: var(--unit-0-px) var(--unit-0-px) var(--unit-8-px) var(--unit-10-px);
   }
 
-  &__image {
-    width: 100%;
-    height: 370px;
-    border-radius: 8px;
-    overflow: hidden;
+  &__articles {
+    display: var(--display-flex);
+    box-sizing: var(--border-sizing-border-box);
+    align-items: var(--align-items-center);
+    gap: var(--unit-10-px);
+    padding-top: var(--unit-80-px);
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
 
-    img {
-      border-radius: 8px;
-      // width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
+  &__articles-wrapper {
+    padding: var(--unit-40-px) var(--unit-45-px);
+    box-sizing: var(--border-sizing-border-box);
+    align-items: var(--align-items-stretch);
+    max-width: var(--unit-100-percent);
+    flex-grow: var(--flex-grow-1);
+    text-decoration: var(--none);
+    display: var(--display-flex);
+    align-items: var(--align-items-end);
+  }
+
+  &__articles-title {
+    font-size: var(--unit-30-px);
+    font-weight: var(--font-weight-500);
+    margin-bottom: var(--unit-10-px);
+  }
+
+  &__article-arrow {
+    display: var(--display-flex);
+    justify-content: var(--justify-content-center);
+    align-items: var(--align-items-center);
+    width: var(--fit-content);
+    height: var(--unit-100-percent);
+    padding: var(--unit-20-px);
+    border-radius: var(--unit-50-px);
+    border: var(--unit-1-px) var(--solid) var(--night);
+  }
+
+  &__social-icons {
+    display: var(--display-flex);
+    gap: var(--unit-20-px);
+    font-size: var(--unit-30-px);
+
+    a:-webkit-any-link {
+      transition: var(--transition-0-3-seconds);
+      color: var(--faded-text);
+      cursor: var(--cursor-pointer);
+    }
+
+    a:hover {
+      color: var(--white);
+      cursor: var(--cursor-pointer);
     }
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .ux-portfolio-writing-section {
-    &__header {
-      font-size: 30px;
-      margin: 0px 0px 50px 0px;
+    margin-top: var(--unit-100-px);
+    &__title-wrapper {
+      display: var(--display-flex);
+      align-items: var(--align-items-end);
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
     }
 
-    &__main-container {
-      flex-wrap: wrap;
+    &__projects-wrapper {
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
     }
 
-    &__title {
-      font-size: 25px;
+    &__spacer {
+      width: var(--unit-60-percent);
     }
 
-    &__image {
+    &__articles {
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+      flex-flow: var(--flex-wrap);
+      padding-top: var(--unit-50-px);
+    }
+
+    &__articles-wrapper {
+      padding: var(--unit-30-px) var(--unit-35-px);
+    }
+
+    &__articles-title {
+      font-size: var(--unit-20-px);
+    }
+
+    &__articles-subtitle {
+      font-size: var(--unit-12-px);
+    }
+
+    &__article-arrow {
+      padding: var(--unit-15-px);
       img {
-        width: 100%;
+        width: var(--unit-15-px);
       }
     }
   }

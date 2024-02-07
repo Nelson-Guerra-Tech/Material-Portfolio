@@ -83,6 +83,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .ux-portfolio-about-section {
+    margin-top: var(--unit-120-px);
     &__title-wrapper {
       width: var(--unit-95-percent); /* Adjust as needed */
       margin: 0 auto; /* Auto margins on the sides */
@@ -92,6 +93,7 @@
       flex-wrap: var(--flex-wrap-reverse);
       width: var(--unit-95-percent); /* Adjust as needed */
       margin: 0 auto; /* Auto margins on the sides */
+      padding-top: var(--unit-50-px);
     }
 
     &__description {

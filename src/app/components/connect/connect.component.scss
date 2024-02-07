@@ -3,31 +3,27 @@
   justify-content: var(--justify-content-start);
   align-items: var(--align-items-center);
   flex-direction: var(--flex-direction-column);
-  color: var(--white);
-  padding: 100px 0 230px 0;
+  color: var(--night);
+  margin: var(--unit-200-px) var(--unit-0-px) var(--unit-200-px)
+    var(--unit-0-px);
+
+  &__main-wrapper {
+    width: var(--unit-70-percent); /* Adjust as needed */
+    margin: 0 auto; /* Auto margins on the sides */
+  }
 
   &__description {
-    font-weight: var(--font-weight-600);
-    max-width: 800px;
+    font-weight: var(--font-weight-400);
+    max-width: var(--unit-700-px);
     font-size: var(--unit-50-px);
-    line-height: 60px;
+    line-height: var(--unit-60-px);
   }
 
   &__link {
-    font-weight: var(--font-weight-600);
-    font-size: var(--unit-45-px);
+    font-weight: var(--font-weight-500);
+    font-size: var(--unit-30-px);
     a {
-      background: #a8ff78; /* fallback for old browsers */
-      background: -webkit-linear-gradient(
-        to right,
-        #78ffd6,
-        #a8ff78
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to right,
-        #78ffd6,
-        #a8ff78
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: var(--watermelon); /* fallback for old browsers */
 
       -webkit-background-clip: var(--bg-clip-text);
       -webkit-text-fill-color: var(--text-fill-transparent);
@@ -36,52 +32,10 @@
 
   &__link:hover {
     a {
-      background: #a8ff78; /* fallback for old browsers */
-      background: -webkit-linear-gradient(
-        to right,
-        #78ffd6,
-        #a8ff78
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to right,
-        #78ffd6,
-        #a8ff78
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: var(--trust); /* fallback for old browsers */
 
       -webkit-background-clip: var(--bg-clip-text);
       -webkit-text-fill-color: var(--text-fill-transparent);
-    }
-  }
-
-  &__icon {
-    background: #a8ff78; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #78ffd6,
-      #a8ff78
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #78ffd6,
-      #a8ff78
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    -webkit-background-clip: var(--bg-clip-text);
-    -webkit-text-fill-color: var(--text-fill-transparent);
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 420px) {
-  .ux-portfolio-contact {
-    padding: var(--unit-0-px) var(--unit-10-px);
-    margin-bottom: var(--unit-100-px);
-    &__description {
-      font-size: var(--unit-35-px);
-      line-height: var(--unit-40-px);
-    }
-
-    &__link {
-      font-size: var(--unit-35-px);
     }
   }
 }
@@ -91,12 +45,17 @@
     padding: var(--unit-0-px) var(--unit-0-px);
     margin-top: var(--unit-150-px);
     margin-bottom: var(--unit-100-px);
+    &__main-wrapper {
+      width: var(--unit-95-percent); /* Adjust as needed */
+      margin: 0 auto; /* Auto margins on the sides */
+    }
     &__description {
-      font-size: 38px;
-      line-height: var(--unit-50-px);
+      font-size: var(--unit-30-px);
+      line-height: var(--unit-90-px);
+    }
+
+    &__link {
+      font-size: var(--unit-20-px);
     }
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
 }
