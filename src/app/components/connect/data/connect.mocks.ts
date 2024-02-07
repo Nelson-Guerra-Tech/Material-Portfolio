@@ -1,10 +1,9 @@
 import { Contact } from "../models/connect.interfaces";
 
 export const ContactData: Contact = {
-  description:
-    "Looking for an awesome group of people to work with! </br> Feel free to reach out to me.",
+  description: "Let's connect!</br> Feel free to reach out to me.",
   link: {
-    url: "Let's Connect",
+    url: "nelsonguerra.tech@outlook.com",
     icon: {
       src: "",
       alt: "",

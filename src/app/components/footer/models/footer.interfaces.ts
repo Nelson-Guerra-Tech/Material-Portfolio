@@ -11,5 +11,6 @@ export interface Links {
 export interface Footer {
   brand: GenericLabel;
   rights: string;
+  built: string;
   links: Links;
 }

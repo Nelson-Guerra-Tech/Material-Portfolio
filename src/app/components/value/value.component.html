@@ -1,22 +1,30 @@
 <div class="ux-portfolio-value-section">
-  <div
-    class="ux-portfolio-value-section__header"
-    [innerHTML]="content.section"
-  ></div>
-
-  <div class="ux-portfolio-value-section__project-container">
-    <div
-      class="ux-portfolio-value-section__card-wrapper"
-      *ngFor="let value of content.skills"
-    >
-      <label
+  <section>
+    <div class="ux-portfolio-value-section__title-wrapper">
+      <div
         class="ux-portfolio-value-section__title"
-        [innerHTML]="value.title"
-      ></label>
-      <label
-        class="ux-portfolio-value-section__description"
-        [innerHTML]="value.description"
-      ></label>
+        [innerHTML]="content.section"
+      ></div>
+      <div class="ux-portfolio-value-section__spacer"></div>
     </div>
-  </div>
+
+    <div class="ux-portfolio-value-section__expertise">
+      <div
+        class="ux-portfolio-value-section__expertise-wrapper"
+        *ngFor="let item of content.expertise"
+        cardColor
+        [cardColorBackground]="item.color"
+        [cardColorLabel]="item.labelColor"
+      >
+        <div
+          class="ux-portfolio-value-section__expertise-title"
+          [innerHTML]="item.title"
+        ></div>
+        <div
+          class="ux-portfolio-value-section__expertise-subtitle"
+          [innerHTML]="item.subtitle"
+        ></div>
+      </div>
+    </div>
+  </section>
 </div>

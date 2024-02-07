@@ -3,6 +3,7 @@ export type Color =
   | "secondary"
   | "success"
   | "warning"
+  | "danger"
   | "info"
   | "white"
   | "dark"
@@ -10,6 +11,7 @@ export type Color =
   | "trust"
   | "lightblue"
   | "lightgrey"
+  | "faded"
   | "mint"
   | "lavender"
   | "sky"
@@ -26,4 +28,6 @@ export type Color =
   | "watermelon"
   | "pastel-yellow"
   | "pastel-green"
+  | "pastel-blue"
+  | "pastel-pink"
   | "none";

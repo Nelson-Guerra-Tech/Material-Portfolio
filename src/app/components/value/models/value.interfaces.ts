@@ -1,9 +1,13 @@
-export interface Skills {
+import { Color } from "../../../types/common-types";
+
+export interface Expertise {
   title: string;
-  description: string;
+  subtitle: string;
+  color: Color;
+  labelColor: Color;
 }
 
 export interface Value {
   section: string;
-  skills: Skills[];
+  expertise: Expertise[];
 }

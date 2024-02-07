@@ -7,7 +7,6 @@ export const ProjectDataMocks: Projects = {
       color: "lightgrey",
       label: "In Angular -",
       title: "Delta: SkyMiles Landing",
-      description: `Currently, I'm working as a Software Engineer and Delta Design System Lead at <span>Delta Air Lines</span>, where my contributions to Delta DOTCOM have reached millions of people worldwide.`,
       image: {
         src: "../../../../assets/projects/laptops/skymiles-gold.png",
         alt: "Nelson Guerra",
@@ -27,10 +26,9 @@ export const ProjectDataMocks: Projects = {
     {
       color: "pastel-yellow",
       label: "In Angular -",
-      title: "SkyMiles Landing Page",
-      description: `Currently, I'm working as a Software Engineer and Delta Design System Lead at <span>Delta Air Lines</span>, where my contributions to Delta DOTCOM have reached millions of people worldwide.`,
+      title: "In Progress",
       image: {
-        src: "../../../../assets/projects/laptops/skymiles-gold.png",
+        src: "../../../../assets/projects/arrow.png",
         alt: "Nelson Guerra",
       },
       arrow: {
@@ -48,10 +46,9 @@ export const ProjectDataMocks: Projects = {
     {
       color: "pastel-green",
       label: "In Angular -",
-      title: "SkyMiles Landing Page",
-      description: `Currently, I'm working as a Software Engineer and Delta Design System Lead at <span>Delta Air Lines</span>, where my contributions to Delta DOTCOM have reached millions of people worldwide.`,
+      title: "In Progress",
       image: {
-        src: "../../../../assets/projects/laptops/skymiles-gold.png",
+        src: "",
         alt: "Nelson Guerra",
       },
       arrow: {

@@ -1,22 +1,29 @@
 <div class="ux-portfolio-footer">
-  <div class="ux-portfolio-footer__social-icons">
-    <a
-      href="https://www.linkedin.com/in/nelson-guerra-7075b413a/"
-      target="_blank"
-    >
-      <fa-icon [icon]="faLinkedin"></fa-icon>
-    </a>
-    <a href="https://medium.com/@nelsonguerra.tech" target="_blank">
-      <fa-icon [icon]="faMedium"></fa-icon>
-    </a>
-    <a href="https://twitter.com/NelsonDevelops" target="_blank">
-      <fa-icon [icon]="faXTwitter"></fa-icon>
-    </a>
-    <a href="#" target="_blank">
-      <fa-icon [icon]="faDribbble"></fa-icon>
-    </a>
-  </div>
-  <div>
-    <p class="ux-portfolio-footer__rights" [innerHTML]="content.rights"></p>
+  <div class="ux-portfolio-footer__main-wrapper">
+    <div class="ux-portfolio-footer__social-icons">
+      <a
+        href="https://www.linkedin.com/in/nelson-guerra-7075b413a/"
+        target="_blank"
+      >
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a href="https://medium.com/@nelsonguerra.tech" target="_blank">
+        <fa-icon [icon]="faMedium"></fa-icon>
+      </a>
+      <a href="https://twitter.com/NelsonDevelops" target="_blank">
+        <fa-icon [icon]="faXTwitter"></fa-icon>
+      </a>
+      <a href="#" target="_blank">
+        <fa-icon [icon]="faDribbble"></fa-icon>
+      </a>
+    </div>
+    <div class="ux-portfolio-footer__rights-wrapper">
+      <div>
+        <p class="ux-portfolio-footer__rights" [innerHTML]="content.rights"></p>
+      </div>
+      <div>
+        <p class="ux-portfolio-footer__built" [innerHTML]="content.built"></p>
+      </div>
+    </div>
   </div>
 </div>

@@ -20,6 +20,12 @@
 .card-color-background-pastel-green {
   background-color: var(--pastel-green);
 }
+.card-color-background-pastel-blue {
+  background-color: var(--pastel-blue);
+}
+.card-color-background-pastel-pink {
+  background-color: var(--pastel-pink);
+}
 .card-color-background-watermelon {
   background-color: var(--watermelon);
 }
@@ -34,6 +40,12 @@
 }
 .card-color-background-sky {
   background-color: var(--sky);
+}
+.card-color-background-danger {
+  background-color: var(--danger);
+}
+.card-color-background-faded {
+  background-color: var(--faded);
 }
 .card-color-background-teal {
   background-color: var(--teal);

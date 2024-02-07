@@ -1,12 +1,13 @@
 import { Component, Input } from "@angular/core";
-import { WritingDataMocks } from "./mocks/writing.mocks";
+import { WritingDataMocks } from "./data/writing.mocks";
 import { Writing } from "./models/writing.interfaces";
 import { CommonModule } from "@angular/common";
+import { BadgeDirective } from "../../directives/badge.directive";
 
 @Component({
   selector: "app-writing",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, BadgeDirective],
   templateUrl: "./writing.component.html",
   styleUrl: "./writing.component.scss",
 })
