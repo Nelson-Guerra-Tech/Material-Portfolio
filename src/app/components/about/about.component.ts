@@ -4,6 +4,7 @@ import { AboutMocks } from "./data/about.mocks";
 import { CommonModule } from "@angular/common";
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
 import { BadgeDirective } from "../../directives/badge.directive";
+import AOS from "aos";
 
 @Component({
   selector: "app-about",
@@ -20,6 +21,8 @@ export class AboutComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
+    AOS.init();
+
     const description = AboutMocks.description;
     this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(description);
   }

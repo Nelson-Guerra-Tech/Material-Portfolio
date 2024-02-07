@@ -1,6 +1,11 @@
 <div class="ux-portfolio-writing-section">
   <section>
-    <div class="ux-portfolio-writing-section__title-wrapper">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      class="ux-portfolio-writing-section__title-wrapper"
+    >
       <div
         class="ux-portfolio-writing-section__title"
         [innerHTML]="content.section"
@@ -8,7 +13,12 @@
       <div class="ux-portfolio-writing-section__spacer"></div>
     </div>
 
-    <div class="ux-portfolio-writing-section__articles">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="250"
+      data-aos-duration="1000"
+      class="ux-portfolio-writing-section__articles"
+    >
       <a
         class="ux-portfolio-writing-section__articles-wrapper"
         *ngFor="let item of content.article"

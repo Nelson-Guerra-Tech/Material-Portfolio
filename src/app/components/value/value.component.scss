@@ -6,7 +6,7 @@
   &__title-wrapper {
     display: var(--display-flex);
     align-items: var(--align-items-end);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -25,7 +25,8 @@
     display: var(--display-flex);
     flex-flow: var(--flex-wrap);
     justify-content: var(--justify-content-space-between);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    box-sizing: border-box;
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
     gap: var(--unit-20-px);
     margin-top: var(--unit-80-px);
@@ -36,7 +37,7 @@
     flex-direction: var(--flex-direction-column);
     gap: var(--unit-5-px);
     max-width: var(--unit-100-percent);
-    width: var(--unit-600-px);
+    width: var(--unit-500-px);
     padding: var(--unit-30-px) var(--unit-35-px);
   }
 
@@ -59,12 +60,12 @@
     &__title-wrapper {
       display: var(--display-flex);
       align-items: var(--align-items-end);
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 
     &__projects-wrapper {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 
@@ -73,7 +74,7 @@
     }
 
     &__expertise {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       gap: var(--unit-10-px);
       margin-top: var(--unit-45-px);
     }

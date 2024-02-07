@@ -1,9 +1,9 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { ProjectDataMocks } from "./data/projects.mocks";
 import { Projects } from "./models/projects.interface";
 import { CommonModule } from "@angular/common";
-import { Title } from "@angular/platform-browser";
 import { BadgeDirective } from "../../directives/badge.directive";
+import AOS from "aos";
 
 @Component({
   selector: "app-projects",
@@ -12,6 +12,10 @@ import { BadgeDirective } from "../../directives/badge.directive";
   templateUrl: "./projects.component.html",
   styleUrl: "./projects.component.scss",
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
   @Input() content: Projects = ProjectDataMocks;
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

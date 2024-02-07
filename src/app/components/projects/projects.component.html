@@ -1,6 +1,11 @@
 <div class="ux-portfolio-projects-section">
   <section class="ux-portfolio-projects-section__centered">
-    <div class="ux-portfolio-projects-section__title-wrapper">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      class="ux-portfolio-projects-section__title-wrapper"
+    >
       <div
         class="ux-portfolio-projects-section__title"
         [innerHTML]="content.section"
@@ -10,6 +15,9 @@
 
     <div class="ux-portfolio-projects-section__projects-wrapper">
       <div
+        data-aos="fade-up"
+        data-aos-delay="250"
+        data-aos-duration="1000"
         class="ux-portfolio-projects-section__projects"
         *ngFor="let project of content.project"
       >

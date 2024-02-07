@@ -6,7 +6,7 @@
   &__title-wrapper {
     display: var(--display-flex);
     align-items: var(--align-items-end);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -28,7 +28,7 @@
     flex-flow: var(--flex-wrap);
     gap: var(--unit-10-px);
     padding-top: var(--unit-80-px);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -97,12 +97,12 @@
     &__title-wrapper {
       display: var(--display-flex);
       align-items: var(--align-items-end);
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 
     &__projects-wrapper {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
       padding-top: var(--unit-50-px);
     }

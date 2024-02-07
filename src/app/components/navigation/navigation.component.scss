@@ -6,12 +6,13 @@
   position: var(--position-fixed);
   top: var(--unit-0);
   width: var(--unit-100-percent);
+  z-index: 1;
 
   &__centered {
     display: var(--display-flex);
     align-items: var(--align-items-center);
     height: var(--unit-70-px);
-    width: var(--unit-95-percent); /* Adjust as needed */
+    width: var(--unit-95-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 

@@ -8,7 +8,7 @@
     var(--unit-0-px);
 
   &__main-wrapper {
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -23,6 +23,7 @@
     font-weight: var(--font-weight-500);
     font-size: var(--unit-30-px);
     a {
+      transition: 0.3s all ease-in;
       background: var(--watermelon); /* fallback for old browsers */
 
       -webkit-background-clip: var(--bg-clip-text);
@@ -32,7 +33,7 @@
 
   &__link:hover {
     a {
-      background: var(--trust); /* fallback for old browsers */
+      background: var(--night); /* fallback for old browsers */
 
       -webkit-background-clip: var(--bg-clip-text);
       -webkit-text-fill-color: var(--text-fill-transparent);
@@ -46,7 +47,7 @@
     margin-top: var(--unit-150-px);
     margin-bottom: var(--unit-100-px);
     &__main-wrapper {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
     &__description {

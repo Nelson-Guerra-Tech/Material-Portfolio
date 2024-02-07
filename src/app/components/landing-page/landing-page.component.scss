@@ -3,11 +3,10 @@
   justify-content: var(--justify-content-space-between);
   align-items: var(--align-items-center);
   width: var(--width-100-percent);
-  padding-top: var(--unit-170-px);
   color: var(--night);
 
   &__centered {
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -15,6 +14,7 @@
     display: var(--display-flex);
     flex-direction: var(--flex-direction-column);
     color: var(--night);
+    margin-top: var(--unit-250-px);
 
     label {
       max-width: var(--unit-900-px);
@@ -87,16 +87,16 @@
     justify-content: var(--justify-content-space-between);
     align-items: var(--align-items-center);
     width: var(--width-100-percent);
-    margin-top: var(--unit-50-px);
 
     &__centered {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 
     &__description {
       display: var(--display-flex);
       flex-direction: var(--flex-direction-column);
+      margin-top: var(--unit-200-px);
 
       label {
         max-width: var(--unit-335-px);

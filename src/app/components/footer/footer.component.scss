@@ -11,7 +11,7 @@
     display: var(--display-flex);
     justify-content: var(--justify-content-space-between);
     align-items: var(--align-items-center);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -76,7 +76,7 @@
       display: var(--display-flex);
       flex-direction: var(--flex-direction-column);
       gap: var(--unit-40-px);
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 

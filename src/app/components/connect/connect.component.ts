@@ -1,6 +1,7 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { ContactData } from "./data/connect.mocks";
 import { Contact } from "./models/connect.interfaces";
+import AOS from "aos";
 
 @Component({
   selector: "app-connect",
@@ -9,6 +10,10 @@ import { Contact } from "./models/connect.interfaces";
   templateUrl: "./connect.component.html",
   styleUrl: "./connect.component.scss",
 })
-export class ConnectComponent {
+export class ConnectComponent implements OnInit {
   @Input() contact: Contact = ContactData;
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

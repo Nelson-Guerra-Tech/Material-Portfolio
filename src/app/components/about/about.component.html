@@ -1,20 +1,32 @@
 <div class="ux-portfolio-about-section">
   <section class="ux-portfolio-about-section__centered">
-    <div class="ux-portfolio-about-section__title-wrapper">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+      class="ux-portfolio-about-section__title-wrapper"
+    >
       <div
         class="ux-portfolio-about-section__title"
         [innerHTML]="content.section"
       ></div>
       <div class="ux-portfolio-about-section__spacer"></div>
     </div>
+
     <div class="ux-portfolio-about-section__details-wrapper">
       <div class="ux-portfolio-about-section__details">
         <div
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="1000"
           class="ux-portfolio-about-section__description"
           [innerHTML]="safeHtml"
         ></div>
 
         <div
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="1000"
           class="ux-portfolio-about-section__skills-wrapper"
           *ngFor="let skill of content.skills"
         >
@@ -28,7 +40,12 @@
           ></div>
         </div>
 
-        <div class="ux-portfolio-about-section__badges-wrapper">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="1000"
+          class="ux-portfolio-about-section__badges-wrapper"
+        >
           <div
             *ngFor="let badge of content.badges"
             class="ux-portfolio-about-section__badge"
@@ -42,7 +59,12 @@
 
         <div class="ux-portfolio-about-section__skills"></div>
       </div>
-      <div class="ux-portfolio-about-section__profile-image">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="250"
+        data-aos-duration="1000"
+        class="ux-portfolio-about-section__profile-image"
+      >
         <img [src]="content.image.src" [alt]="content.image.alt" />
       </div>
     </div>

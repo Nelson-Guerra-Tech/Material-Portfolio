@@ -6,7 +6,7 @@
   &__title-wrapper {
     display: var(--display-flex);
     align-items: var(--align-items-end);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -16,7 +16,7 @@
   }
 
   &__spacer {
-    width: var(--unit-55-percent); /* Adjust as needed */
+    width: var(--unit-55-percent);
     border-bottom: var(--night) var(--unit-2-px) var(--solid);
     margin: var(--unit-0-px) var(--unit-0-px) var(--unit-8-px) var(--unit-10-px);
   }
@@ -24,7 +24,7 @@
   &__details-wrapper {
     display: var(--display-flex);
     padding-top: var(--unit-80-px);
-    width: var(--unit-70-percent); /* Adjust as needed */
+    width: var(--unit-70-percent);
     margin: 0 auto; /* Auto margins on the sides */
   }
 
@@ -85,13 +85,13 @@
   .ux-portfolio-about-section {
     margin-top: var(--unit-120-px);
     &__title-wrapper {
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
     }
 
     &__details-wrapper {
       flex-wrap: var(--flex-wrap-reverse);
-      width: var(--unit-95-percent); /* Adjust as needed */
+      width: var(--unit-95-percent);
       margin: 0 auto; /* Auto margins on the sides */
       padding-top: var(--unit-50-px);
     }

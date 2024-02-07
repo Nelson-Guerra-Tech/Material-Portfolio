@@ -28,7 +28,7 @@ export const ProjectDataMocks: Projects = {
       label: "In Angular -",
       title: "In Progress",
       image: {
-        src: "../../../../assets/projects/arrow.png",
+        src: "",
         alt: "Nelson Guerra",
       },
       arrow: {
