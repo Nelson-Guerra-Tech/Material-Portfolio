@@ -71,6 +71,28 @@
     border-radius: var(--unit-20-px);
   }
 
+  &__resume-button {
+    margin-top: var(--unit-50-px);
+    display: var(--display-flex);
+    justify-content: var(--justify-content-center);
+    align-items: var(--align-items-center);
+    width: var(--unit-150-px);
+    padding: var(--unit-15-px) var(--unit-20-px);
+    border-radius: var(--unit-8-px);
+    border: var(--text-decoration-none);
+    cursor: var(--cursor-pointer);
+    background-color: var(--danger);
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    font-weight: var(--font-weight-400);
+    transition: 0.1s ease-out;
+    text-decoration: var(--none);
+
+    &:hover {
+      background-color: var(--night);
+    }
+  }
+
   &__profile-image {
     display: var(--display-flex);
     align-items: var(--align-items-center);
