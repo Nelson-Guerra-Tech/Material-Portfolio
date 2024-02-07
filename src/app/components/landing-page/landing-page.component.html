@@ -26,7 +26,10 @@
         data-aos-delay="300"
         class="ux-portfolio-hero-section__action"
       >
-        <a [innerHTML]="content.action"></a>
+        <a
+          href="mailto:nelsonguerra.tech@outlook.com?subject=Subject Line&body=Hello, I am writing to..."
+          [innerHTML]="content.action"
+        ></a>
       </button>
     </div>
   </section>

@@ -110,5 +110,20 @@
     &__spacer {
       width: var(--unit-60-percent);
     }
+
+    &__project-label {
+      font-size: var(--unit-14-px);
+    }
+
+    &__project-title {
+      font-size: var(--unit-20-px);
+    }
+
+    &__arrow {
+      padding: var(--unit-15-px);
+      img {
+        width: var(--unit-15-px);
+      }
+    }
   }
 }

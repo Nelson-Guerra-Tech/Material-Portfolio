@@ -26,7 +26,7 @@ export const ProjectDataMocks: Projects = {
     {
       color: "pastel-yellow",
       label: "In Angular -",
-      title: "In Progress",
+      title: "Under Construction",
       image: {
         src: "",
         alt: "Nelson Guerra",
@@ -46,7 +46,7 @@ export const ProjectDataMocks: Projects = {
     {
       color: "pastel-green",
       label: "In Swift -",
-      title: "In Progress",
+      title: "Under Construction",
       image: {
         src: "",
         alt: "Nelson Guerra",
