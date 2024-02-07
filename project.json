@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "ios",
+  "name": "ios2",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -13,7 +13,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/ios",
+        "outputPath": "dist/ios2",
         "index": "src/index.html",
         "browser": "src/main.ts",
         "polyfills": [
@@ -61,10 +61,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "ios:build:production"
+          "buildTarget": "ios2:build:production"
         },
         "development": {
-          "buildTarget": "ios:build:development"
+          "buildTarget": "ios2:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "ios:build"
+        "buildTarget": "ios2:build"
       }
     },
     "test": {
